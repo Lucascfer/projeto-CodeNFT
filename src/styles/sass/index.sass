@@ -1,0 +1,665 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Jura:wght@600;700&display=swap")
+
+$dark: #030303
+$light: #ffffff
+$purple: #e025ceb3
+$green-purple-gradient: linear-gradient(138.34deg,#e025ceb3 -11.36%,#4aed52b3 51.55%,#bd24e6b3 113.16%)
+$yellow: #f7fc0e
+$yellow-gradient: linear-gradient(97.86deg, #ff8d8d -38.38%, #f7fc0e 71.88%)
+
+*
+    margin: 0
+    padding: 0
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    -webkit-tap-highlight-color: transparent
+    color: $light
+
+html
+    scroll-behavior: smooth
+
+body
+    color: $light
+    overflow-x: hidden
+    background: $dark
+    display: flex
+    height: auto
+    align-items: center
+    flex-direction: column
+
+.container
+    padding: 32px 0
+    width: 1216px
+
+.navbar
+    display: flex
+    align-items: center
+    justify-content: space-between
+    position: fixed
+    background: $dark
+    z-index: 9999
+
+    .logo
+        a
+            display: flex
+            font-family: "Jura", sans-serif
+            text-decoration: none
+            font-weight: 700
+            font-size: 32px
+            line-height: 38px
+            gap: 16px
+            transition: 0.2s color
+
+            &:hover
+                color: $yellow
+
+    .menu
+        display: flex
+        gap: 48px
+
+        .menuItem
+            font-family: "Inter", sans-serif
+            list-style: none
+
+            a
+                text-decoration: none
+
+                &:hover
+                    color: $yellow
+
+.home
+    padding-top: 197px
+    display: flex
+    justify-content: space-between
+    flex-direction: row
+
+    .homeContent
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        width: 592px
+        height: 481px
+
+    .homeInfo
+        gap: 24px
+
+        h1, p
+            font-family: "Inter", sans-serif
+
+        h1
+            font-weight: 700
+            font-size: 56px
+            line-height: 120%
+            width: 90%
+
+            span
+                background: $yellow-gradient
+                -webkit-background-clip: text
+                -webkit-text-fill-color: transparent
+
+        p
+            font-weight: 400
+            font-size: 20px
+            line-height: 160%
+            margin-bottom: 1rem
+            width: 80%
+
+    .cardImg
+        border-radius: 6px
+        border: double 4px transparent
+        background-image: linear-gradient(73deg, #292929 52%, $purple 100%), $green-purple-gradient
+        background-origin: border-box
+        background-clip: content-box, border-box
+
+        .cardContent
+            position: relative
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            height: calc(100% - 138px)
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5)
+            backdrop-filter: blur(50px)
+            -webkit-backdrop-filter: blur(50px)
+
+            img
+                position: absolute
+                top: -65px
+                height: 400px
+                height: 400px
+                z-index: 100
+                border-radius: 6px
+
+        .cardDescription
+            display: flex
+            height: 138px
+            width: 100%
+            background: rgba(31, 31, 31, 0.5333333333)
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5)
+            backdrop-filter: blur(50px)
+            -webkit-backdrop-filter: blur(50px)
+
+            .descriptionItem
+                width: 50%
+                display: flex
+                flex-direction: column
+                gap: 15px
+
+                &:nth-child(1)
+                    padding: 16px 32px
+                    font-family: "Inter"
+
+                    .descriptionInfo
+                        display: flex
+                        flex-direction: column
+                        gap: 6px
+
+                        h1
+                            font-weight: 700
+                            font-size: 20px
+                            line-height: 24px
+
+                        span
+                            font-weight: 400
+                            font-size: 16px
+                            opacity: 0.7
+
+                    .descriptionPrice
+                        display: flex
+                        align-items: center
+                        gap: 12px
+
+                &:nth-child(2)
+                    align-items: center
+                    justify-content: center
+
+.overview
+    margin-top: 96px
+    padding: 0
+    display: flex
+    align-items: center
+    justify-content: space-around
+    border-radius: 16px
+    border: double 4px transparent
+    background-image: linear-gradient(#1f1f1f, #1f1f1f), $green-purple-gradient
+    background-origin: border-box
+    background-clip: content-box, border-box
+    backdrop-filter: blur(50px)
+    opacity: 0.9
+
+    .infoContent
+        display: flex
+        width: 100%
+        align-items: center
+        justify-content: space-between
+        padding: 0 127px
+
+        .info
+            padding: 55px 0px
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            height: 100%
+            gap: 16px
+
+            h1
+                font-family: "Jura", sans-serif
+                font-weight: 700
+                font-size: 50px
+
+            span
+                font-family: "Inter", sans-serif
+                font-weight: 7600
+                font-size: 20px
+
+        .divider
+            border: double 1px transparent
+            background-image: linear-gradient(#1f1f1f, #1f1f1f), $green-purple-gradient
+            background-origin: border-box
+            background-clip: content-box, border-box
+            height: 100px
+
+.topNft
+    margin-top: 80px
+    text-align: center
+
+    h1
+        font-family: "Inter", sans-serif
+        font-weight: 600
+        font-size: 40px
+
+    .cards
+        padding: 48px 0
+        display: flex
+        flex-direction: row
+        gap: 32px
+
+        .card
+            border-radius: 8px
+            width: 384px
+            height: 450px
+
+            img
+                border-radius: 8px
+                width: 100%
+                height: 100%
+                object-fit: cover
+
+.collectors
+    margin-top: 71px
+
+    .colletorHeader
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-bottom: 48px
+
+        h1
+            font-family: "Inter", sans-serif
+            font-size: 40px
+            font-weight: 600
+
+    .tableContainer
+        table
+            width: 100%
+
+            tr
+                display: flex
+                align-items: center
+                justify-content: space-between
+
+            td, th
+                width: 25%
+                font-family: "Inter", sans-serif
+                font-weight: 500
+                font-size: 24px
+                display: flex
+                align-items: flex-end
+                flex-direction: column
+
+            thead
+                border-bottom: double 1px transparent
+                background-image: linear-gradient($dark, $dark), $green-purple-gradient
+                background-origin: border-box
+                background-clip: content-box, border-box
+
+                tr
+                    padding: 24px 0
+
+            tbody
+                tr
+                    padding: 32px 0
+
+                    .end-item
+                        justify-items: center
+                        align-items: flex-end
+                        gap: 20px
+
+                        & span:nth-child(2)
+                            font-size: 16px
+                            font-weight: 500
+                            background: var(--yellow-gradient)
+                            -webkit-background-clip: text
+                            -webkit-text-fill-color: transparent
+
+                td
+                    .profileItem
+                        flex-direction: row
+                        justify-content: flex-start
+                        align-items: center
+                        gap: 30px
+                        width: 50%
+
+                        img
+                            width: 48px
+                            height: 48px
+                            border-radius: 8px
+
+            tbody, thead
+                width: 100%
+
+.btn
+    font-family: "Inter", sans-serif
+    padding: 16px 64px
+    text-transform: uppercase
+    background: $yellow-gradient
+    border-radius: 6px
+    color: $dark
+    font-size: 20px
+    line-height: 24px
+    text-align: center
+    font-weight: 600
+    letter-spacing: 0.08em
+    cursor: pointer
+    border: 1px solid transparent
+    transition: all 0.2s ease-in
+    width: 245px
+    height: 56px
+
+    &:hover
+        border-color: $yellow
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+
+.btn-sm
+    padding: 12px 32px
+    font-size: 14px
+
+.btn-md
+    padding: 16px 48px
+    font-size: 18px
+
+.questions
+    h1
+        font-family: "Inter", sans-serif
+        font-size: 40px
+        font-weight: 600
+
+    .accordions
+        font-family: "Inter", sans-serif
+        overflow: hidden
+        font-size: 20px
+        font-weight: 400
+
+        .accordion
+            overflow: hidden
+            border-bottom: double 1px transparent
+            background-image: linear-gradient($dark, $dark), $green-purple-gradient
+            background-origin: border-box
+            background-clip: content-box, border-box
+
+            input
+                position: absolute
+                opacity: 0
+                z-index: -1
+
+                &:checked + .accordion-label::after
+                    transform: rotateZ(180deg)
+
+                &:checked ~ .accordion-content
+                    height: auto
+                    padding-bottom: 2rem
+
+            .accordion-label
+                display: flex
+                align-items: center
+                justify-content: space-between
+                cursor: pointer
+                padding: 43.5px 0
+
+                &::after
+                    font-family: "Material Icons"
+                    content: "\e5cf"
+                    background: $yellow-gradient
+                    -webkit-background-clip: text
+                    -webkit-text-fill-color: transparent
+                    font-size: 35px
+                    transition: transform 0.3s ease
+
+            .accordion-content
+                height: 0
+                transition: all 0.3s ease
+
+.footer
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-top: 80px
+    flex-direction: column
+    gap: 40px
+    font-family: "Inter", sans-serif
+
+    .socialMenu
+        display: flex
+        gap: 50px
+
+        .socialItem
+            height: 80px
+            width: 80px
+            display: flex
+            align-items: center
+            justify-content: center
+            border-radius: 16px
+            border: double 2px transparent
+            background-image: linear-gradient(#1f1f1f, #1f1f1f), $green-purple-gradient
+            background-origin: border-box
+            background-clip: content-box, border-box
+            backdrop-filter: blur(50px)
+            opacity: 0.9
+
+            img
+                height: 30px
+                width: 30px
+
+@media (max-width: 1240px)
+    body
+        padding: 0 2rem
+
+    .container
+        width: 100%
+
+    .navbar
+        padding: 2rem
+
+@media (max-width: 1050px)
+    .homeInfo h1
+        font-size: 2.5rem
+
+    .navbar .menu
+        display: none
+
+    .overview .infoContent
+        padding: 0 2rem
+
+@media (max-width: 970px)
+    .home
+        width: 100%
+        flex-direction: column
+        margin-bottom: 24px
+
+        .cardImg
+            display: none
+            width: 100%
+            flex-direction: column
+            margin-bottom: 24px
+
+        .homeContent
+            width: 100%
+            height: auto
+
+        .homeInfo h1
+            width: 100%
+
+        .homeInfo p
+            width: 100%
+
+    .navbar .menu
+        display: none
+
+    .overview .infoContent
+        justify-content: space-between
+        padding: 0 28px
+        display: flex
+        overflow: hidden
+        position: relative
+        height: 120px
+
+@media (max-width: 850px)
+    .overview
+        padding: 0
+        margin-top: 0
+        width: 100%
+
+    .infoContent .info
+        padding: 28px 0px
+        gap: 8px
+        width: 100%
+        height: 100%
+        left: 0
+        top: 0
+        position: absolute
+        transition: transform 1s ease-in-out
+
+    .info .current
+        transform: translateX(0%)
+
+    .info:not(.current)
+        transform: translateX(-100%)
+
+    .divider.hidden
+        display: none
+
+    .topNft
+        margin-top: 56px
+        text-align: center
+        justify-content: center
+        width: 300px
+        padding: 0
+
+        .cards
+            display: flex
+            flex-direction: column
+
+            .card
+                padding: 0
+                margin: 0
+                width: auto
+                height: auto
+
+                img
+                    width: 312px
+                    height: 254px
+
+    .colletorHeader .btn .btn-sm
+        display: none
+
+    .tableContainer thead tr
+        padding: 16px 0
+
+    .tableContainer tbody tr
+        padding: 20px 0
+
+    .tableContainer td,
+    .tableContainer th
+        font-size: 16px
+        width: 50%
+
+    .tableContainer td img
+        width: 32px
+        height: 32px
+
+    .tableContainer .profileItem
+        gap: 12px
+
+    .tableContainer .endItem
+        gap: 4px
+
+        span:nth-child(1)
+            font-size: 12px
+
+        span:nth-child(2)
+            font-size: 10px
+
+@media (max-width: 670px)
+    .btn
+        width: 100%
+
+    .collectors
+        margin-top: 0
+
+    .cards .card
+        height: 100%
+
+@media (max-width: 350px)
+    .btn
+        width: 312px
+
+    .navbar
+        width: 300px
+
+        .menu
+            display: none
+
+        .logo h1 a
+            font-size: 16px
+            gap: 8px
+
+    .home
+        width: 300px
+        padding-top: 8rem
+        height: 28rem
+
+        .homeInfo
+            display: block
+            border-block: auto
+
+            h1
+                width: 100%
+                font-size: 32px
+                margin-bottom: 2rem
+
+            p
+                width: 100%
+                font-size: 16px
+
+        .cardImg
+            display: none
+
+    .overview
+        width: 312px
+        height: 120px
+
+    .topNft
+        h1
+            font-size: 24px
+
+    .collectors
+        margin: 0
+        padding: 0
+        width: 312px
+        height: auto
+
+        .colletorHeader
+            padding-bottom: 28px
+
+            h1
+                font-size: 22px
+
+        .tableContainer
+            width: 300px
+
+            table thead tr
+                border: none
+
+                th
+                    font-size: 15px
+
+            .hidden
+                display: none
+
+    .questions h1
+        font-size: 22px
+        padding-bottom: 28px
+
+    .accordions
+        font-size: 14px
+
+    .accordion .accordion-label
+        font-size: 14px
+        padding: 15px 0
+
+        &::after
+            font-size: 25px
+
+    .footer
+        width: 100%
+        margin-top: 0
+
+        .socialMenu
+            gap: 29px
+
+            .socialItem
+                height: 56px
+                width: 56px

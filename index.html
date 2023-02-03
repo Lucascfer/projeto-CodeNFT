@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/styles/css/index.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+  <title>Projeto CodeNFT</title>
+</head>
+
+<body>
+  <nav class="container navbar">
+    <div class="logo">
+      <h1>
+        <a href="./">
+          <img src="src/assets/images/logo.svg" alt="CodeNFT" />
+          CodeNFT
+        </a>
+      </h1>
+    </div>
+    <ul class="menu">
+      <li class="menuItem"><a href="#home">Início</a></li>
+      <li class="menuItem"><a href="#top-nft">NFT</a></li>
+      <li class="menuItem"><a href="#collectors">Colecionadores</a></li>
+      <li class="menuItem"><a href="#questions">Perguntas</a></li>
+    </ul>
+  </nav>
+
+  <main class="container home" id="home">
+    <div class="homeContent homeInfo">
+      <h1>
+        Descubra e colete <span>obras de arte</span> digitais super raras
+      </h1>
+      <p>
+        O maior mercado NFT. Criação digital autêntica e verdadeiramente
+        única. Assinado e emitido pelo criador, possibilitado pela tecnologia
+        blockchain
+      </p>
+      <button class="btn">Explorar</button>
+    </div>
+    <div class="homeContent cardImg">
+      <div class="cardContent">
+        <img src="src/assets/images/image-1.svg" />
+      </div>
+      <div class="cardDescription">
+        <div class="descriptionItem">
+          <div class="descriptionInfo">
+            <h1>Apple Mu</h1>
+            <span>By Steve Jobs</span>
+          </div>
+          <div class="descriptionPrice">
+            <img src="src/assets/images/logo.svg" />
+            <span>18 ETH</span>
+          </div>
+        </div>
+        <div class="descriptionItem">
+          <button class="btn btn-md">comprar</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="container overview">
+    <div class="infoContent">
+      <div class="info current">
+        <h1>300</h1>
+        <span>COLEÇÕES</span>
+      </div>
+      <div class="divider hidden"></div>
+      <div class="info">
+        <h1>+100k</h1>
+        <span>USUÁRIOS</span>
+      </div>
+      <div class="divider hidden"></div>
+      <div class="info">
+        <h1>+30k</h1>
+        <span>NEGOCIAÇÕES</span>
+      </div>
+      <div class="divider hidden"></div>
+      <div class="info">
+        <h1>+1 M</h1>
+        <span>VISUALIZAÇÕES</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="container topNft" id="topNft">
+    <h1>TOP NFTs</h1>
+    <div class="cards">
+      <div class="card">
+        <img src="src/assets/images/image-2.svg" />
+      </div>
+      <div class="card">
+        <img src="src/assets/images/image-3.svg" />
+      </div>
+      <div class="card">
+        <img src="src/assets/images/image-4.svg" />
+      </div>
+    </div>
+  </section>
+
+  <section class="container collectors" id="collectors">
+    <div class="colletorHeader">
+      <h1>Colecionadores</h1>
+      <button class="btn btn-sm">Ver todos</button>
+    </div>
+    <div class="tableContainer">
+      <table>
+        <thead>
+          <tr>
+            <th class="profileItem">Colecionador</th>
+            <th class="endItem">Volume</ht>
+            <th class="endItem hidden">Piso</th>
+            <th class="endItem hidden">Items</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="profileItem">
+              <img src="src/assets/images/profile-1.svg" />
+              <span>Amanda</span>
+            </td>
+            <td class="endItem">
+              <span>230.38 ETH</span>
+              <span>+50.20%</span>
+            </td>
+            <td class="endItem">
+              <span>12.38 ETH</span>
+              <span>+50.20%</span>
+            </td>
+            <td class="endItem hidden">
+              <span>138</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="profileItem">
+              <img src="src/assets/images/profile-2.svg" />
+              <span>Fernando</span>
+            </td>
+            <td class="endItem">
+              <span>189.25 ETH</span>
+              <span>+48.20%</span>
+            </td>
+            <td class="endItem">
+              <span>12.38 ETH</span>
+              <span>+40.20%</span>
+            </td>
+            <td class="endItem hidden">
+              <span>119</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="profileItem">
+              <img src="src/assets/images/profile-3.svg" />
+              <span>Bruna</span>
+            </td>
+            <td class="endItem">
+              <span>160.20 ETH</span>
+              <span>+40.20%</span>
+            </td>
+            <td class="endItem">
+              <span>12.38 ETH</span>
+              <span>+39.20%</span>
+            </td>
+            <td class="endItem hidden">
+              <span>102</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="profileItem">
+              <img src="src/assets/images/profile-4.svg" />
+              <span>José</span>
+            </td>
+            <td class="endItem">
+              <span>150.62 ETH</span>
+              <span>+37.20%</span>
+            </td>
+            <td class="endItem">
+              <span>12.38 ETH</span>
+              <span>+29.20%</span>
+            </td>
+            <td class="endItem hidden">
+              <span>100</span>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="container questions" id="questions">
+    <h1>Perguntas Frequentes</h1>
+    <div class="accordions">
+      <div class="accordion">
+        <input type="checkbox" id="accordion-1" />
+        <label for="accordion-1" class="accordion-label">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor?</label>
+        <div class="accordion-content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+          explicabo libero quos, dicta nihil minus. Laboriosam cupiditate
+          debitis delectus! Tempore odio, cupiditate blanditiis eaque
+          laboriosam fuga laborum molestiae ullam expedita!
+        </div>
+      </div>
+
+      <div class="accordion">
+        <input type="checkbox" id="accordion-2" />
+        <label for="accordion-2" class="accordion-label">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor?</label>
+        <div class="accordion-content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+          explicabo libero quos, dicta nihil minus. Laboriosam cupiditate
+          debitis delectus! Tempore odio, cupiditate blanditiis eaque
+          laboriosam fuga laborum molestiae ullam expedita!
+        </div>
+      </div>
+
+      <div class="accordion">
+        <input type="checkbox" id="accordion-3" />
+        <label for="accordion-3" class="accordion-label">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor?</label>
+        <div class="accordion-content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+          explicabo libero quos, dicta nihil minus. Laboriosam cupiditate
+          debitis delectus! Tempore odio, cupiditate blanditiis eaque
+          laboriosam fuga laborum molestiae ullam expedita!
+        </div>
+      </div>
+
+      <div class="accordion">
+        <input type="checkbox" id="accordion-4" />
+        <label for="accordion-4" class="accordion-label">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor?</label>
+        <div class="accordion-content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
+          explicabo libero quos, dicta nihil minus. Laboriosam cupiditate
+          debitis delectus! Tempore odio, cupiditate blanditiis eaque
+          laboriosam fuga laborum molestiae ullam expedita!
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="container footer">
+    <ul class="socialMenu">
+      <li class="socialItem">
+        <a href="#"><img src="src/assets/images/instagram.svg" /></a>
+      </li>
+      <li class="socialItem">
+        <a href="#"><img src="src/assets/images/facebook.svg" /></a>
+      </li>
+      <li class="socialItem">
+        <a href="#"><img src="src/assets/images/twitter.svg" /></a>
+      </li>
+      <li class="socialItem">
+        <a href="#"><img src="src/assets/images/email.svg" /></a>
+      </li>
+    </ul>
+    <p>&copy; Lucascfer 2023</p>
+  </footer>
+  <script src="src/modules/index.js" type="module" defer></script>
+</body>
+
+</html>
