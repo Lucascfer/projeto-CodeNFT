@@ -8,6 +8,16 @@
   -webkit-tap-highlight-color: transparent;
   color: #ffffff;
 }
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  background: #030303;
+}
+*::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  border: 3px solid rgba(224, 37, 206, 0.7019607843);
+}
 
 html {
   scroll-behavior: smooth;

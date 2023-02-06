@@ -5,7 +5,7 @@ export const leftAnimationContainerElementList = [
 
 export const topAnimationContainerElementList = [
   document.querySelector(".home"),
-  document.querySelector(".top-nft"),
+  document.querySelector(".topNft"),
   document.querySelector(".collectors"),
 ];
 
@@ -13,12 +13,12 @@ export const topAnimationElementList = [
   ...document.querySelectorAll(".info h1"),
   ...document.querySelectorAll(".info span"),
   ...document.querySelectorAll(".card"),
-  document.querySelector(".table-container thead"),
-  document.querySelector(".table-container tbody"),
-  ...document.querySelectorAll(".table-container tr"),
+  document.querySelector(".tableContainer thead"),
+  document.querySelector(".tableContainer tbody"),
+  ...document.querySelectorAll(".tableContainer tr"),
   ...document.querySelectorAll(".accordion"),
-  ...document.querySelectorAll(".social-item"),
+  ...document.querySelectorAll(".socialItem"),
   document.querySelector(".footer p"),
 ];
 
-export const cardHomeAnimation = [document.querySelector(".card-content img")];
+export const cardHomeAnimation = [document.querySelector(".cardContent img")];
